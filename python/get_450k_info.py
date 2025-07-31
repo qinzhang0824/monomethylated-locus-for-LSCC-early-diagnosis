@@ -165,19 +165,6 @@ with open(argv.tcgarawbeta) as t,open(argv.georawbeta) as g,open(os.path.join(ar
         else:
             tumor_NA=0
             picked_beta=[]
-            #normal_NA=0
-            #if item[0] not in allpicked_beta:
-            #    allpicked_beta[item[0]]=[]
-            #if item[0] not in trainpicked_beta:
-            #    trainpicked_beta[item[0]]=[]
-            #if item[0] not in valpicked_beta:
-            #    valpicked_beta[item[0]]=[]
-            #for i in allpicked_index:
-            #    if item[i]=='NA' and sample_vs_index[i] in tumor:
-            #        tumor_NA+=1
-                #if item[i]=='NA' and sample_vs_index[i] in normal:
-                    #normal_NA+=1
-            #    allpicked_beta[item[0]].append(item[i])
             for i in trainpicked_index:
                 if item[i]=='NA' and train_sample_vs_index[i] in train_tumor:
                     tumor_NA+=1
